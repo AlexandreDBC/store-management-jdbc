@@ -1,39 +1,40 @@
-<<<<<<< HEAD
-# store-management-jdbc
+# 📦 store-management-jdbc
+
+[![Academic Project](https://img.shields.io/badge/Type-Academic%20Project-blue?style=for-the-badge)](https://github.com/AlexandreDBC)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+
+> *A database design and Java JDBC application developed as part of academic coursework to manage a store catalog, orders, and deliveries.*
+
 Java application using JDBC to connect to a relational database, implementing a complete store management system (products, orders, deliveries, and catalog features).
-=======
-# Projet Base de données
 
-## Compilation et exécution
+## 🚀 Compilation and Execution
 
-### 1. **Prérequis**
-*   Java Development Kit (JDK) version 17 ou supérieure.
-*   ojdbc17.jar
+### 1. Prerequisites
+* Java Development Kit (JDK) version 17 or higher.
+* `ojdbc17.jar` (Oracle JDBC Driver).
 
-### 2. **Compiler le projet**
-Pour compiler l'ensemble des fichiers source :
+### 2. Compilation
+To compile all source files, run the following command at the root of the project:
 ```bash
 make
 ```
-Cette commande créera un dossier `out/` contenant tous les fichiers `.class`.
+*This command will create an `out/` directory containing all the compiled `.class` files.*
 
-### 3. **Exécuter le projet**
-
+### 3. Execution
+To start the application:
 ```bash
 make start
 ```
-Cette commande démarrera l'application.
 
-## Utilisation du démonstrateur
+## 💻 Usage & Demonstration
 
-Le démonstrateur propose une interface dans le terminal.
-On peut intéragir avec celle-ci en entrant les numéros correspondant aux choix désirés.
+The application features an interactive terminal-based UI. You can navigate through the menus by entering the number corresponding to your desired action.
 
-### 1. **Exemple : Affichage du catalogue des contenants** 
+### Example: Browsing the Container Catalog
 
-À l'invitation :
+At the main menu prompt:
 
-```
+```text
 Que voulez vous faire ?
 1 - Consulter le catalogue
 2 - Passer une commande
@@ -41,15 +42,18 @@ Que voulez vous faire ?
 4 - Clôturer une commande
 5 - Quitter l'application
 ```
-On pourra répondre `1` dans le terminal pour consulter les produits et contenants disponibles à la vente. On pourra ensuite faire afficher ce menu :
 
-```
+Type `1` in the terminal to browse available products and containers. The following sub-menu will appear:
+
+```text
 Que souhaitez-vous voir ?
 1 - Consulter les produits
 2 - Consulter les contenants
 ```
-Pour écrire `2` pour afficher les contenants disponibles à la vente :
-```
+
+Type `2` to display the containers currently available for sale. The application will fetch the data from the database and display:
+
+```text
 Chargement du catalogue...
 Sac kraft SACK1K à usage unique (1000.0 grammes)
 └── 300 restant à 0.1€ l'unité
@@ -60,5 +64,5 @@ Bouteille plastique BOT1LPL à usage unique (1.0 litres)
 Pot en verre POT750V réutilisable (0.75 litres)
 └── 50 restant à 1.2€ l'unité
 ```
-Le reste du fonctionnement de l'application est analogue.
->>>>>>> master
+
+*The rest of the application (ordering, expiration alerts, etc.) operates using this same intuitive logic.*
