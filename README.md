@@ -1,9 +1,6 @@
 # 📦 store-management-jdbc
 
-[![Academic Project](https://img.shields.io/badge/Type-Academic%20Project-blue?style=for-the-badge)](https://github.com/AlexandreDBC)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
-
-> *A database design and Java JDBC application developed as part of academic coursework to manage a store catalog, orders, and deliveries.*
+> *A database design and Java JDBC application to manage a store catalog, orders, and deliveries.*
 
 Java application using JDBC to connect to a relational database, implementing a complete store management system (products, orders, deliveries, and catalog features).
 
